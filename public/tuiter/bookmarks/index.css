@@ -40,7 +40,7 @@
 }
 
 .wd-font-size-13px {
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .wd-font-size-20px {
@@ -157,8 +157,8 @@
     margin-right: 12px;
 }
 
-.wd-margin-right-85px{
-    margin-right: 85px;
+.wd-margin-right-80px{
+    margin-right: 80px;
 }
 
 
@@ -176,6 +176,10 @@
 
 .wd-padding-12px {
     padding: 12px;
+}
+
+.wd-padding-left-16px {
+    padding-left: 16px;
 }
 
 .wd-float_right {
@@ -217,10 +221,6 @@
     max-width: 506px;
 }
 
-.wd-text-align {
-    text-align: match-parent;
-
-}
 
 .wd-position-relative {
     position:relative;
@@ -264,5 +264,9 @@
 
 .wd-no-underline {
     text-decoration:none
+}
+
+.wd-vertical_align {
+    vertical-align:middle;
 }
 
