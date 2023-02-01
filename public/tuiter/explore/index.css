@@ -6,6 +6,10 @@
     background-color :#212327;
 }
 
+.wd-bg-color-gray {
+    background-color :rgb(110, 118, 125);
+}
+
 .wd-rounded-corners-all-around {
     border-radius: 50px;
 }
@@ -13,6 +17,7 @@
 .wd-border-color-black {
     border-color: black;
 }
+
 
 
 .wd-font-size-15px {
@@ -37,19 +42,31 @@
 }
 
 .wd-text-color-blue {
-    color: #1DA1F2
+    color: rgb(29,161,242)
 }
 
 .wd-text-color-gray {
-    color: #5A5A5A
+    color: rgb(110, 118, 125)
 }
 
 .wd-padding-16px {
     padding: 16px;
 }
 
-wd-padding-left-16px {
+.wd-padding-bottom-16px {
+    padding-bottom: 16px;
+}
+
+.wd-padding-left-16px {
     padding-left: 16px;
+}
+
+.wd-padding-right-16px {
+    padding-right: 16px;
+}
+
+.wd-padding-top-16px {
+    padding-top: 16px;
 }
 
 .wd-margin-top-5px {
@@ -69,11 +86,21 @@ wd-padding-left-16px {
 
 }
 .wd-center {
-    text-align: center;
+    display: flex;
+    justify-content: center
 }
+
+
+
 
 .wd-no-underline {
     text-decoration:none
+}
+
+.wd-underline-blue-3px {
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgb(29,161,242);
+    text-underline-offset: 6px;
 }
 
 .wd-bold {
@@ -126,11 +153,6 @@ wd-padding-left-16px {
     font-family: Arial;
 }
 
-.wd-underline-blue-3px {
-    border-bottom: 3px solid #1DA1F2;
-    border-bottom-style: wave;
-}
-
 .wd-padding-bottom-5px {
     padding-bottom: 5px;
 }
@@ -139,8 +161,8 @@ wd-padding-left-16px {
     padding-bottom: 15px;
 }
 
-.wd-border-bottom-2px-gray{
-    border-bottom: 2px solid #5A5A5A;
+.wd-border-top-2px-gray{
+    border-top: 2px solid rgb(110, 118, 125);
 }
 
 .wd-width_50_percent {
@@ -155,12 +177,17 @@ wd-padding-left-16px {
     width: 70%;
 }
 
-.wd-width_350px {
-    width: 350px;
+.wd-width_410px {
+    width: 410px;
 }
 
 .wd-width_20_percent {
     width: 20%;
+}
+
+.wd-width-656px {
+    min-width: 656px;
+    width: 656px;
 }
 
 .wd-text_align_left {
@@ -168,7 +195,7 @@ wd-padding-left-16px {
 }
 
 .wd-border-around-1px-gray{
-    border: 1px solid #5A5A5A;
+    border: 1px solid rgb(110, 118, 125);
 }
 
 .wd-margin-5px {
@@ -176,7 +203,7 @@ wd-padding-left-16px {
 }
 
 .wd-border-bottom-1px-gray{
-    border-bottom: 1px solid #5A5A5A;
+    border-bottom: 1px solid rgb(110, 118, 125);
 }
 
 .wd-margin-5px-bottom{
@@ -252,7 +279,7 @@ wd-padding-left-16px {
 .wd-dot {
     height: 3px;
     width: 3px;
-    background-color: #5A5A5A;
+    background-color: rgb(110, 118, 125);
     border-radius: 50%;
     display: inline-block;
 }
@@ -263,13 +290,18 @@ wd-padding-left-16px {
 
 .wd-absolute_position {
     position: absolute;
-    left: 44px;
-    top: 33px;
+}
+
+.wd-translate-left-35-top-24x {
+    left: 35px;
+    top: 20px;
 }
 
 .wd-input_text_padding {
-    padding: 15px 60px;
+    padding: 11px 60px;
 }
+
+
 
 
 

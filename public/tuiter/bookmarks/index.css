@@ -7,12 +7,12 @@
 }
 
 .wd-bg-color-gray {
-    background-color: #5A5A5A
+    background-color: rgb(110, 118, 125)
 }
 
 
 .wd-bg-color-dark-blue {
-    background-color :#1DA1F2;
+    background-color : rgb(29,161,242);
 }
 
 .wd-border-color-black {
@@ -24,15 +24,31 @@
 }
 
 .wd-text-color-blue {
-    color: #1DA1F2
+    color: rgb(29,161,242)
 }
 
 .wd-text-color-gray {
-    color: #5A5A5A
+    color: rgb(110, 118, 125)
 }
 
-.wd-text-color-red {
-    color: red
+.wd-text-color-like {
+    color: #FA1A80;
+}
+
+.wd-text-color-re-tuit {
+    color: #00BA7C;
+}
+
+.wd-color-fill-like {
+    fill: #FA1A80;
+}
+
+.wd-color-fill-comment {
+    fill: rgb(29,161,242);
+}
+
+.wd-color-fill-re-tuit{
+    fill: #00BA7C
 }
 
 .wd-font-size-15px {
@@ -62,7 +78,7 @@
 }
 
 .wd-font-family-arial {
-    font-family: Arial;
+    font-family: arial;
 }
 
 .wd-bold {
@@ -79,35 +95,35 @@
 }
 
 .wd-border-around-1px-gray{
-    border: 1px solid #5A5A5A;
+    border: 1px solid rgb(110, 118, 125);
 }
 
 .wd-border-around-1px-gray-rounded{
-    border: 1px solid #5A5A5A;
+    border: 1px solid rgb(110, 118, 125);
     border-radius: 15px;
 
 }
 
 .wd-border_right_1px_gray {
-    border-right: 1px solid #5A5A5A;
+    border-right: 1px solid rgb(110, 118, 125);
 
 
 }
 
 .wd-border_left_1px_gray {
-    border-left: 1px solid #5A5A5A;
+    border-left: 1px solid rgb(110, 118, 125);
 
 
 }
 
 .wd-border_bottom_1px_gray {
-    border-bottom: 1px solid #5A5A5A;
+    border-bottom: 1px solid rgb(110, 118, 125);
 
 
 }
 
 .wd-border_top_1px_gray {
-    border-top: 1px solid #5A5A5A;
+    border-top: 1px solid rgb(110, 118, 125);
 
 
 }
@@ -221,6 +237,11 @@
     max-width: 506px;
 }
 
+.wd-width-656px {
+    min-width: 656px;
+    width: 656px;
+}
+
 
 .wd-position-relative {
     position:relative;
@@ -258,9 +279,6 @@
     fill: #5A5A5A;
 }
 
-.svg-my-color-fill-like {
-    fill: red;
-}
 
 .wd-no-underline {
     text-decoration:none
@@ -270,3 +288,8 @@
     vertical-align:middle;
 }
 
+
+.wd-center {
+    display: flex;
+    justify-content: center
+}

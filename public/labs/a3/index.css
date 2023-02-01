@@ -251,6 +251,30 @@ p#id-selector-2 {
     transform: rotate(-10deg);
 }
 
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+
+
+
+
+
 .gradients-linear {
     background: linear-gradient(deepskyblue, darkviolet, purple, mediumvioletred);
     width: 200px;
@@ -277,13 +301,15 @@ p#id-selector-2 {
 .animation-keyframes {
     position: relative;
     top: 0px;
-    animation-duration: 7s;
+    animation-duration: 12s;
     animation-name: slidein;
     width: 200px;
     height: 200px;
     background-color: red;
     color: white;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
+
 }
 
 @keyframes slidein {
