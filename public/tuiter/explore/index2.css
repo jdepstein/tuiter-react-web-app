@@ -1,0 +1,9 @@
+.wd-color-fill-comment {
+    fill: rgb(29,161,242);
+}
+
+.bottom-left {
+    position: relative;
+    bottom: 35px;
+    left: 10px;
+}
