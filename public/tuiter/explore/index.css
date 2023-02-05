@@ -1,0 +1,18 @@
+.wd-color-fill-comment {
+    fill: rgb(29,161,242);
+}
+.border_bottom_2px_white {
+    border-bottom: white 2px;
+}
+
+.imageContainer {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
