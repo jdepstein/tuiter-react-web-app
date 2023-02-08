@@ -147,6 +147,11 @@
     height: 50px;
 }
 
+.wd-image_30_x_35 {
+    width: 30px;
+    height: 35px;
+}
+
 
 
 
@@ -185,6 +190,10 @@
 
 li:hover {
     background-color:  #EEF3F4;
+}
+
+.wd-filter-blue {
+        filter: invert(57%) sepia(40%) saturate(4763%) hue-rotate(178deg) brightness(97%) contrast(94%);
 }
 
 
