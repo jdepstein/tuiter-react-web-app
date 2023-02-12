@@ -6,15 +6,15 @@ export default [
     },
 
     {   icon: 'fa fa-house-damage',
-        link: "../HomeScreen/index.html",
+        link: "index.html",
         text: "Home",
-        active: false
+        active: true
     },
 
     {   icon: 'fa fa-hashtag',
-        link: "index.html",
+        link: "../explore_js/index.html",
         text: "Explore",
-        active: true
+        active: false
     },
 
     {   icon: 'fa fa-bell',
