@@ -5,7 +5,7 @@ export default [
         active: false
     },
 
-    {   icon: 'fa fa-house-damage',
+    {   icon: 'fa fa-home',
         link: "index.html",
         text: "Home",
         active: true
