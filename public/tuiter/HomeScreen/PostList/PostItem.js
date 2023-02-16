@@ -6,7 +6,7 @@ const postItem = (item) => {
                     <img class="wd-image_round_60 float-start" src="${item.profile_pic}">
                 </div>
                 
-                <div class="col-9">
+                <div class="col-10">
                     <scan class=" ms-3 fw-bold wd-font-family-arial text-white text-wrap">
                       ${item.name}
                     </scan>
@@ -20,7 +20,7 @@ const postItem = (item) => {
                 </div>
              
                 
-                <div class="col-2">
+                <div class="col-1">
                     <i class="fa fa-ellipsis-h float-end wd-margin-right-16px text-secondary"></i>
                 </div>
                 
