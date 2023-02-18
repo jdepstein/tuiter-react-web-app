@@ -1,0 +1,5 @@
+[
+  { "name": "FEDRA", "handle": "@fedra", "profile_pic": "../../images/fedra.png", "verification" : "../../images/badge_gold.png"},
+  { "name": "Joel Miller", "handle": "@Joel_Miller", "profile_pic": "../../images/joel.jpg", "verification" : "../../images/badge.png"},
+  { "name": "Ellie Williams", "handle": "@Ellie Willams", "profile_pic": "../../images/ellie.jpg", "verification" : null}
+]

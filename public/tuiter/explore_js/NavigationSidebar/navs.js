@@ -6,13 +6,13 @@ export default [
     },
 
     {   icon: 'fa fa-home',
-        link: "../HomeScreen/index.html",
+        link: "../HomeScreen/index.js.html",
         text: "Home",
         active: false
     },
 
     {   icon: 'fa fa-hashtag',
-        link: "index.html",
+        link: "index.js.html",
         text: "Explore",
         active: true
     },
@@ -24,7 +24,7 @@ export default [
     },
 
     {   icon: 'fa fa-envelope',
-        link: "../bookmarks/index.html",
+        link: "../bookmarks/index.js.html",
         text: "Bookmarks",
         active: false
     },

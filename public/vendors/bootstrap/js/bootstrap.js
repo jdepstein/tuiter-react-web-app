@@ -5021,7 +5021,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.3): index.umd.js
+   * Bootstrap (v5.1.3): index.js.umd.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */

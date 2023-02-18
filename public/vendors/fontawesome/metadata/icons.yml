@@ -78,7 +78,7 @@ address-book:
     terms:
       - contact
       - directory
-      - index
+      - index.js
       - little black book
       - rolodex
   styles:

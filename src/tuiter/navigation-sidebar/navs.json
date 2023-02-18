@@ -1,0 +1,10 @@
+[
+  { "icon": "fab fa-tumblr",    "link": "#", "text": null },
+  { "icon": "fa fa-home",       "link": "#", "text": "Home"},
+  { "icon": "fa fa-hashtag",    "link": "#", "text": "Explore"},
+  { "icon": "fa fa-bell",       "link": "#", "text": "Notifications"},
+  { "icon": "fa fa-envelope",   "link": "#", "text": "Bookmarks"},
+  { "icon": "fa fa-fire",       "link": "#", "text": "Top Articles"},
+  { "icon": "fa fa-user",       "link": "#", "text": "Profile"},
+  { "icon": "fa fa-ellipsis-h", "link": "#", "text": "More"}
+]
