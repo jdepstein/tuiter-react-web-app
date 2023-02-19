@@ -1,4 +1,6 @@
 import PostSummaryList from "../post-summary-list";
+import {Link} from "react-router-dom";
+
 
 const ExploreComponent = () => {
     return(
@@ -20,7 +22,7 @@ const ExploreComponent = () => {
                 </div>
                 <div className="col-2 mt-3">
                     <div className="ms-3 me-2 align-content-center">
-                        <a href="#" className="wd-font-family-arial wd-no-underline h3 text-black fw-normal">&#9881;</a>
+                        <Link to="" className="wd-font-family-arial wd-no-underline h3 text-black fw-normal">&#9881;</Link>
                     </div>
                 </div>
             </div>
@@ -29,19 +31,19 @@ const ExploreComponent = () => {
                 <div className=" mb-1 mt-2 pt-1 btn-group" role="group" aria-label="Basic example">
                     <ul className="w-100 nav bg-transparent">
                         <li className="text-center nav-item m-auto bg-transparent d-inline">
-                            <a href="#" className="wd-padding-0 text-black fw-bold wd-no-underline under-line-blue">For You</a>
+                            <Link to="" className="wd-padding-0 text-black fw-bold wd-no-underline under-line-blue">For You</Link>
                         </li>
                         <li className="text-center nav-item  m-auto bg-transparent d-inline">
-                            <a href="#" className="wd-padding-0 nav-link fw-bold disabled">Trending </a>
+                            <Link to="" className="wd-padding-0 nav-link fw-bold disabled">Trending </Link>
                         </li>
                         <li className="text-center nav-item m-auto bg-transparent d-inline">
-                            <a href="#" className="wd-padding-0 nav-link fw-bold disabled">News</a>
+                            <Link to="" className="wd-padding-0 nav-link fw-bold disabled">News</Link>
                         </li>
                         <li className="text-center nav-item m-auto bg-transparent d-inline">
-                            <a href="#" className="text-center wd-padding-0 nav-link fw-bold disabled">Sports</a>
+                            <Link to="" className="text-center wd-padding-0 nav-link fw-bold disabled">Sports</Link>
                         </li>
                         <li className="text-center nav-item  m-auto bg-transparent d-inline">
-                            <a href="#" className=" wd-padding-0 nav-link  d-none d-md-block fw-bold disabled">Entertainment</a>
+                            <Link to="" className=" wd-padding-0 nav-link  d-none d-md-block fw-bold disabled">Entertainment</Link>
                         </li>
                     </ul>
                 </div>
