@@ -2,12 +2,7 @@ import follows  from "./follows.json"
 import FollowItem from "./who-to-follow-list-item";
 import {Link} from "react-router-dom";
 
-const FollowList = (
-    {
-        active = 'explore'
-    }
-
-) => {
+const FollowList = () => {
     return (
         <div className="pe-1 ps-1">
             <ul className="text-center list-group wd-rounded" role="group">

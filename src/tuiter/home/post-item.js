@@ -19,7 +19,7 @@ const PostItem = (
         <>
             <div className="row">
                 <div className="col-1">
-                    <img className=" wd-image_round_60 float-start" src={post.profile_pic}/>
+                    <img alt="" className=" wd-image_round_60 float-start" src={post.profile_pic}/>
                 </div>
 
                 <div className="col-10">
@@ -42,7 +42,7 @@ const PostItem = (
             </div>
 
             <div className="wd-margin-left-60px card bg-transparent border-secondary">
-                <img className="w-100 wd-height-300 card-img" src={post.post_image}/>
+                <img alt="" className="w-100 wd-height-300 card-img" src={post.post_image}/>
                     {post.post_image_text ?
                         <div className="card-footer bg-transparent">
                           <p className="text-dark wd-font-family-arial">

@@ -9,7 +9,7 @@ const ExploreComponent = () => {
                         <div className="border rounded-pill border-dark wd-bg-off-white border-0">
                             <div className="input-group">
                                     <span className="bg-transparent border-0 input-group-text" id="basic-addon1">
-                                    <img src="../../images/magnifying-glass-solid.svg" className="ps-1 wd-fill-gray" width="25"
+                                    <img alt="" src="../../images/magnifying-glass-solid.svg" className="ps-1 wd-fill-gray" width="25"
                                          height="20"/>
                                     </span>
                                 <input type="text" className="shadow-none border-0 bg-transparent form-control text-black"
@@ -48,7 +48,7 @@ const ExploreComponent = () => {
             </div>
 
             <div className="w-100 p-0 mt-2 wd-imageContainer">
-                <img className="w-100" src="../../images/boston_qz.jpg"/>
+                <img alt="" className="w-100" src="../../images/boston_qz.jpg"/>
                 <div className="wd-bottom-left-story text-white">
                     <div className="float-start wd-text-13px">
                         Cordyceps News &#xb7; LIVE

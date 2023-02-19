@@ -46,7 +46,7 @@ const SummaryItem = (
 
                 {summary.promotion ?
                     <div className="ps-2 float-start wd-text-medium-gray text-wrap">
-                        <img className="wd-image_15_square" src="../../images/extern_link.png" />
+                        <img alt="" className="wd-image_15_square" src="../../images/extern_link.png" />
                         {summary.promotion}
                     </div>
                     : ''

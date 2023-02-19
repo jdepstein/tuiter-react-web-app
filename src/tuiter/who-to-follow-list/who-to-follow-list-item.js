@@ -10,13 +10,13 @@ const FollowItem = (
     return(
             <div className ="row">
                 <div className ="ps-1 col-2">
-                    <img className ="mt-2 wd-image_round_48" src={follow.profile_pic}/>
+                    <img alt="" className ="mt-2 wd-image_round_48" src={follow.profile_pic}/>
                 </div>
 
                 <div className ="col-2 mt-2 text-nowrap">
                     <div className ="float-start fw-bold text-black">
                         {follow.name}
-                        {follow.verification ? <img className="wd-image_20_square" src={follow.verification} /> : ''}
+                        {follow.verification ? <img alt="" className="wd-image_20_square" src={follow.verification} /> : ''}
                     </div>
                     <div className ="float-start fw-normal text-secondary">
                         {follow.handle}
