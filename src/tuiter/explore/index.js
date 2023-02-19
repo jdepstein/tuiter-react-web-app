@@ -30,19 +30,19 @@ const ExploreComponent = () => {
             <div className="row border-bottom p-0 m-0">
                 <div className=" mb-1 mt-2 pt-1 btn-group" role="group" aria-label="Basic example">
                     <ul className="w-100 nav bg-transparent">
-                        <li className="text-center nav-item m-auto bg-transparent d-inline">
-                            <Link to="" className="wd-padding-0 text-black fw-bold wd-no-underline under-line-blue">For You</Link>
+                        <li className="text-center nav-item m-auto d-inline">
+                            <Link to="" className="wd-padding-0 nav-link fw-bold disabled text-black under-line-blue">For You</Link>
                         </li>
-                        <li className="text-center nav-item  m-auto bg-transparent d-inline">
+                        <li className="text-center nav-item  m-auto d-inline">
                             <Link to="" className="wd-padding-0 nav-link fw-bold disabled">Trending </Link>
                         </li>
-                        <li className="text-center nav-item m-auto bg-transparent d-inline">
+                        <li className="text-center nav-item m-auto d-inline">
                             <Link to="" className="wd-padding-0 nav-link fw-bold disabled">News</Link>
                         </li>
-                        <li className="text-center nav-item m-auto bg-transparent d-inline">
+                        <li className="text-center nav-item m-auto d-inline">
                             <Link to="" className="text-center wd-padding-0 nav-link fw-bold disabled">Sports</Link>
                         </li>
-                        <li className="text-center nav-item  m-auto bg-transparent d-inline">
+                        <li className="text-center nav-item  m-auto d-inline">
                             <Link to="" className=" wd-padding-0 nav-link  d-none d-md-block fw-bold disabled">Entertainment</Link>
                         </li>
                     </ul>

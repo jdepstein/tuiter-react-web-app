@@ -180,7 +180,7 @@
 
 .under-line-blue {
     border-radius: 10px;
-    box-shadow: 0  25px  0 -5px #1E9CF0;
+    box-shadow: 0  30px  0 -5px #1E9CF0;
 
 }
 
@@ -344,9 +344,9 @@ li:hover {
     border-radius: 15px;
 }
 
-.wd-image_round_60 {
-    width: 60px;
-    height: 60px;
+.wd-image_round_55 {
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
 }
 
@@ -392,7 +392,7 @@ li:hover {
 
 .under-line-blue {
     border-radius: 10px;
-    box-shadow: 0  30px  0 -5px #1E9CF0;
+    box-shadow: 0  37px  0 -5px #1E9CF0;
 
 }
 
@@ -418,10 +418,6 @@ li:hover {
     color: #222222;
 }
 
-.wd-height-300 {
-    height: 330px;
-
-}
 
 
 

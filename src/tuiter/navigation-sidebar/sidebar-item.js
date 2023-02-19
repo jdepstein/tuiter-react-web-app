@@ -27,7 +27,7 @@ const SidebarItem = (
                 <p className=
                           {`${nav.text ? 'd-none d-xl-block ' : 'd-none'} 
                             ${active === lowercase_text ? 'wd-text-blue fw-bold':'text-dark'}
-                          float-start`}>
+                          float-start p-0 m-0`}>
                     {nav.text}
                 </p>
             </Link>

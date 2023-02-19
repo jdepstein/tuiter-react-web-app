@@ -9,20 +9,80 @@
     "post_image_text": "FEDRA establishes quarantine zone in Boston . . .",
     "comment": "4.8K",
     "like": "10K",
-    "retuit": "55k"
+    "retuit": "55k",
+    "type" : "image",
+    "retuit-info": null
   },
 
   {
+    "profile_pic": "../../images/ellie.jpg",
+    "name": "Ellie Williams",
+    "handle": "@EW",
+    "post_date" : "5 min",
+    "post_text": "Still traveling across the country we left KC a little but ago and looks like we finally might be getting to Wyoming soon",
+    "post_image": null,
+    "post_image_text": null,
+    "comment": "4k",
+    "like": "100K",
+    "retuit": "5k",
+    "type" : "regular",
+    "retuit_info": null
+  },
+
+  {
+    "profile_pic": "../../images/joel.jpg",
+    "name": "Joel Miller",
+    "handle": "@Joel_Miller_03",
+    "post_date" : "15 days",
+    "post_text": "Although You will never read this I wish you and Frank the best for where ever you may be now ",
+    "post_image": null,
+    "post_image_text": null,
+    "comment": "",
+    "like": "5",
+    "retuit": "1",
+    "type" : "retuit",
+    "retuit_info":
+    {
+      "profile_pic": "../../images/bill.jpg",
+      "name": "Bill",
+      "handle": "@Just_Bill",
+      "post_date" : "20 days",
+      "post_text": "To Joel: By the time you read this I assume you will have already reached my house I hope you found my letter and I wish you and Tess the Best"
+    }
+  },
+
+
+
+
+  {
     "profile_pic": "../../images/fedra.png",
-    "name": "Fire Flies",
-    "handle": "@FF",
-    "post_date" : "10 hours ago",
+    "name": "FEDRA",
+    "handle": "@FEDRA",
+    "post_date" : "10h",
     "post_text": "We are close to a Vaccine now ",
     "post_image": "../../images/fire_fly.jpg",
     "post_image_text": null,
     "comment": "4.8K",
     "like": "10K",
-    "retuit": "55k"
+    "retuit": "55k",
+    "type" : "image",
+    "retuit-info": null
+  },
+
+  {
+    "profile_pic": "../../images/bill.jpg",
+    "name": "Bill",
+    "handle": "@Just_Bill",
+    "post_date" : "20 days",
+    "post_text": "To Joel: By the time you read this I assume you will have already reached my house I hope you found my letter and I wish you and Tess the Best",
+    "post_image": null,
+    "post_image_text": null,
+    "comment": "1",
+    "like": "2",
+    "retuit": "2",
+    "type" : "regular",
+    "retuit_info": null
   }
+
 
 ]

@@ -4,9 +4,9 @@ import {Link} from "react-router-dom";
 
 const FollowList = () => {
     return (
-        <div className="pe-1 ps-1">
-            <ul className="text-center list-group wd-rounded" role="group">
-                <li className=" list-group-item bg-transparent wd-text-20px fw-bold text-black border-0">
+        <div className="pe-1 ps-1 wd-bg-off-white">
+            <ul className="list-group wd-rounded">
+                <li className="list-group-item wd-text-20px fw-bold text-black border-0 bg-transparent">
                     <p className="float-start m-0 mt-1">Who to Follow</p>
                 </li>
                 {
