@@ -12,18 +12,21 @@ const SidebarItem = (
 
     const {pathname} = useLocation();
     const paths = pathname.split('/')
-    const active = paths[2];
-
+    let active = paths[2];
+    const lowercase_text = nav.text.toLowerCase();
+    if  (paths.length < 3 || active === '') {
+        active = "explore";
+    }
     return (
             <Link to={nav.link} className="wd-no-underline">
                 <i className=
                        {`float-start me-2 pt-1 ${nav.icon}
-                       ${active === nav.text || active === "" && nav.text === "Explore" ? 'wd-text-blue':'text-dark'}
+                       ${active === lowercase_text ? 'wd-text-blue fw-bold':'text-dark'}
                        `}>
                 </i>
                 <p className=
                           {`${nav.text ? 'd-none d-xl-block ' : 'd-none'} 
-                            ${active === nav.text || active === "" && nav.text === "Explore" ? 'wd-text-blue':'text-dark'}
+                            ${active === lowercase_text ? 'wd-text-blue fw-bold':'text-dark'}
                           float-start`}>
                     {nav.text}
                 </p>

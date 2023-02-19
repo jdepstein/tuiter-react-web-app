@@ -1,6 +1,6 @@
 import summaries  from "./summaries.json"
 import SummaryItem from "./post-summary-item";
-const SummaryList = (
+const PostSummaryList = (
 ) => {
     return (
         <div>
@@ -16,4 +16,4 @@ const SummaryList = (
     );
 
 };
-export default SummaryList
+export default PostSummaryList

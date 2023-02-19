@@ -12,26 +12,26 @@ const SummaryItem = (
         <div className="row" >
             <div className="col-10 mt-2 text-nowrap">
                 {summary.trending_tag ?
-                    <div className={`float-start ${summary.promotion ? 'fw-bold text-dark' : "text-secondary"} text-nowrap`}>
+                    <div className={`ps-2 float-start ${summary.promotion ? 'fw-bold text-dark' : "text-secondary"} text-nowrap`}>
                         {summary.trending_tag}
                      </div>
                     : ''}
                 <br/>
 
-                <div className={`float-start  ${summary.promotion ? "text-secondary" : "fw-bold text-dark"} text-nowrap`}>
+                <div className={`ps-2 float-start  ${summary.promotion ? "text-secondary" : "fw-bold text-dark"} text-nowrap`}>
                     {summary.title}
                 </div>
                 <br/>
 
                 {summary.tuits ?
-                    <div className="float-start text-secondary text-nowrap">
+                    <div className="ps-2 float-start text-secondary text-nowrap">
                         {summary.tuits}
                      </div>
                     : ''
                 }
 
                 {summary.with ?
-                    <div className="wd-text-medium-gray d-inline">
+                    <div className="ps-2 wd-text-medium-gray d-inline">
                         Trending With
                         {summary.with.map((item, i) => {
                         return (
@@ -45,7 +45,7 @@ const SummaryItem = (
 
 
                 {summary.promotion ?
-                    <div className="float-start wd-text-medium-gray text-wrap">
+                    <div className="ps-2 float-start wd-text-medium-gray text-wrap">
                         <img className="wd-image_15_square" src="../../images/extern_link.png" />
                         {summary.promotion}
                     </div>
