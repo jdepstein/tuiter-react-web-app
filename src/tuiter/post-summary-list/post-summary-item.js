@@ -12,9 +12,9 @@ const SummaryItem = (
         <div className="row" >
             <div className="col-10 mt-2 text-nowrap">
                 {summary.trending_tag ?
-                    <div className={`ps-2 float-start ${summary.promotion ? 'fw-bold text-dark' : "text-secondary"} text-nowrap`}>
-                        {summary.trending_tag}
-                     </div>
+                    <div
+                        dangerouslySetInnerHTML={{__html: summary.trending_tag}} className={`ps-2 float-start ${summary.promotion ? 'fw-bold text-dark' : "text-secondary"} text-nowrap`}>
+                    </div>
                     : ''}
                 <br/>
 
