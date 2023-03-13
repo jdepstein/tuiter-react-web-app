@@ -12,12 +12,12 @@ const PostItemImage = (
             post_image_text:  "",
             post_text: "",
             comment: "",
+            liked: false,
             like: "",
             retuit: "",
             type: "",
             retuit_info: ""
         }
-
     }
 ) => {
     return(

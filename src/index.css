@@ -418,6 +418,17 @@ li:hover {
     color: #222222;
 }
 
+.wd-text-color-like {
+    color: #FA1A80;
+}
+.wd-color-fill-like {
+    fill: #FA1A80;
+}
+
+.wd-no_focus:focus{
+    outline: none;
+}
+
 
 
 

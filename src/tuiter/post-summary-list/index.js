@@ -1,13 +1,14 @@
-import summaries  from "./summaries.json"
+import {useSelector} from "react-redux";
 import SummaryItem from "./post-summary-item";
 const PostSummaryList = (
 ) => {
+    const postsArray = useSelector(state => state.tuits_sum)
     return (
         <div>
             {
-                summaries.map((summary, i)  => {
+                postsArray.map((summary)  => {
                     return(
-                        <div key={i} className="wd-margin-top-12px wd-padding-bottom-12px">
+                        <div key={summary._id} className="wd-margin-top-12px wd-padding-bottom-12px">
                             <SummaryItem summary={summary}/>
                         </div>);
                 })

@@ -6,10 +6,23 @@ import HomeComponent from "./home";
 import PostSummaryList from "./post-summary-list";
 import WhoToFollowList from "./who-to-follow-list";
 
+import whoReducer from "./reducers/who-reducer";
+import tuitsSumReducer from "./tuits/tuits-sum-reducer";
+import tuitsReducer from "./tuits/tuits-reducer";
+
+import { configureStore } from '@reduxjs/toolkit';
+import {Provider} from "react-redux";
+
+
+const store = configureStore(
+    {reducer: {who: whoReducer, tuits_sum: tuitsSumReducer, tuits: tuitsReducer}});
+
+
+
 function Tuiter() {
     return (
-        <div>
-            <Nav/>
+        <Provider store={store}>
+        <Nav/>
             <div className="row mt-2">
                 <div className="container-fluid col-2 col-sm-2 col-md-2 col-lg-1 col-xl-3">
                     <NavigationSidebar active="explore"/>
@@ -30,7 +43,8 @@ function Tuiter() {
                     </Routes>
                 </div>
             </div>
-        </div>
+        </Provider>
+
     )
 }
 export default Tuiter

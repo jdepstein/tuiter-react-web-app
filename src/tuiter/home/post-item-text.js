@@ -1,3 +1,7 @@
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "../tuits/tuits-reducer";
+
+
 const PostItemText = (
     {
         post = {
@@ -9,6 +13,7 @@ const PostItemText = (
             post_image_text:  "",
             post_text: "",
             comment: "",
+            liked: false,
             like: "",
             retuit: "",
             type: "",
@@ -16,6 +21,11 @@ const PostItemText = (
         }
     }
 ) => {
+
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
     return(
         <>
             <div className="row">
@@ -36,7 +46,8 @@ const PostItemText = (
                 </div>
 
                 <div className="col-1">
-                    <i className="fa fa-ellipsis-h float-end wd-margin-right-16px text-secondary"></i>
+                    <i className="fa fa-ellipsis-h float-end wd-margin-right-16px text-secondary"
+                       onClick={() => deleteTuitHandler(post._id)}></i>
                 </div>
             </div>
         </>

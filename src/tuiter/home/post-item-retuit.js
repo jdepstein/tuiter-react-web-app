@@ -12,6 +12,7 @@ const PostItemReTuit = (
             post_image_text:  "",
             post_text: "",
             comment: "",
+            liked: false,
             like: "",
             retuit: "",
             type: "",
