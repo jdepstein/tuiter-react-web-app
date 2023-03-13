@@ -9,7 +9,7 @@ const currentUser = {
 
 const templateTuit = {
     ...currentUser,
-    "post_date" : "",
+    "post_date" : "2 min",
     "post_image": null,
     "post_image_text": null,
     "comment": 0,
