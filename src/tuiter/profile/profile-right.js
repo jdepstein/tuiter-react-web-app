@@ -1,4 +1,3 @@
-import WhoToFollowList from "../who-to-follow-list";
 import PostSummaryList from "../post-summary-list";
 import EndLinks from "../who-to-follow-list/endlinks";
 import FollowList from "../who-to-follow-list/follow-list";
