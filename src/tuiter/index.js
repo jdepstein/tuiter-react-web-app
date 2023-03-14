@@ -4,7 +4,6 @@ import ExploreComponent from "./explore";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
 import PostSummaryList from "./post-summary-list";
-import WhoToFollowList from "./who-to-follow-list";
 
 import whoReducer from "./reducers/who-reducer";
 import tuitsSumReducer from "./tuits/tuits-sum-reducer";
