@@ -9,13 +9,19 @@ import WhoToFollowList from "./who-to-follow-list";
 import whoReducer from "./reducers/who-reducer";
 import tuitsSumReducer from "./tuits/tuits-sum-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer";
+
 
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+import ProfileComponent from "./profile";
+import FollowListComponent from "./who-to-follow-list";
+import ProfileComponentRight from "./profile/profile-right";
+import EditProfileComponent from "./edit-profile";
 
 
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits_sum: tuitsSumReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuits_sum: tuitsSumReducer, tuits: tuitsReducer, profile: profileReducer}});
 
 
 
@@ -31,6 +37,8 @@ function Tuiter() {
                     <Routes>
                         <Route path="home" element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
+                        <Route path="profile" element={<ProfileComponent/>}/>
+                        <Route path="edit-profile" element={<EditProfileComponent/>}/>
                         <Route index element={<ExploreComponent/>}/>
                     </Routes>
                 </div>
@@ -38,8 +46,10 @@ function Tuiter() {
                 <div className="container-fluid d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-3">
                     <Routes>
                         <Route path="home" element={<PostSummaryList/>}/>
-                        <Route path="explore" element={<WhoToFollowList/>}/>
-                        <Route index element={<WhoToFollowList/>}/>
+                        <Route path="explore" element={<FollowListComponent/>}/>
+                        <Route index element={<FollowListComponent/>}/>
+                        <Route path="profile" element={<ProfileComponentRight/>}/>
+                        <Route path="edit-profile" element={<ProfileComponentRight/>}/>
                     </Routes>
                 </div>
             </div>

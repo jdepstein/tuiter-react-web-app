@@ -138,6 +138,13 @@
     border-radius: 50%;
 }
 
+.wd-image_146_round {
+    width: 146px;
+    height: 146px;
+    border-radius: 50%;
+}
+
+
 .wd-image_65_x_60 {
     width: 55px;
     height: 50px;
@@ -429,7 +436,18 @@ li:hover {
     outline: none;
 }
 
+.wd-focus:hover{
+    background-color: #EEF3F4;
+}
 
+.wd-pos-profile {
+    top: -73px;
+    left: 20px;
+}
+
+.wd-text-15px {
+    font-size: 15px;
+}
 
 
 
