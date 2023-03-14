@@ -10,7 +10,7 @@
     "post_image_text": "FEDRA establishes quarantine zone in Boston . . .",
     "comment": "4.8K",
     "liked": true,
-    "like": "10000",
+    "like": 10000,
     "retuit": "55k",
     "type" : "image",
     "retuit-info": null
@@ -26,7 +26,7 @@
     "post_image_text": null,
     "comment": "4k",
     "liked": false,
-    "like": "100000",
+    "like": 100000,
     "retuit": "5k",
     "type" : "regular",
     "retuit_info": null
@@ -43,7 +43,7 @@
     "post_image_text": null,
     "comment": "",
     "liked": false,
-    "like": "5",
+    "like": 5,
     "retuit": "1",
     "type" : "retuit",
     "retuit_info":
@@ -70,7 +70,7 @@
     "post_image_text": null,
     "comment": "4.8K",
     "liked": false,
-    "like": "100",
+    "like": 100,
     "retuit": "55k",
     "type" : "image",
     "retuit-info": null
@@ -87,7 +87,7 @@
     "post_image_text": null,
     "comment": "1",
     "liked": false,
-    "like": "2",
+    "like": 2,
     "retuit": "2",
     "type" : "regular",
     "retuit_info": null

@@ -449,6 +449,11 @@ li:hover {
     font-size: 15px;
 }
 
+#bio {
+    min-height: 100px;
+    height: 100px;
+}
+
 
 
 

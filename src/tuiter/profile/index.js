@@ -2,8 +2,9 @@ import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 
 const ProfileComponent = () => {
-    const profile = useSelector(
+    const profileArray = useSelector(
         (state) => state.profile);
+    const profile = profileArray[0]
     return(
         <>
             <div className="row mt-2">
@@ -14,7 +15,7 @@ const ProfileComponent = () => {
                 </div>
                 <div className="col-11">
                     <div className=" wd-text-20px text-dark wd-font-family-arial fw-bold" >
-                        {profile.firstName} {profile.lastName}
+                        {profile.Name}
                     </div>
                     <div className="wd-text-13px text-secondary wd-font-family-arial " >
                         {profile.tuitCount} Tuits
@@ -34,7 +35,7 @@ const ProfileComponent = () => {
                 </div>
                 <div className="ps-4 pb-4 mb-4">
                     <div className=" wd-text-20px text-dark wd-font-family-arial fw-bold" >
-                        {profile.firstName} {profile.lastName}
+                        {profile.Name}
                     </div>
                     <div className="wd-text-15px text-secondary wd-font-family-arial mb-2" >
                         {profile.handle}
