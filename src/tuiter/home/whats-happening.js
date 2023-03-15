@@ -11,6 +11,7 @@ const WhatsHappening = () => {
             post_text: whatsHappening
         }
         dispatch(createTuit(newTuit));
+        setWhatsHappening("");
     }
 
     return(

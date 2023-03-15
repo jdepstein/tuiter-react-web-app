@@ -454,6 +454,38 @@ li:hover {
     height: 100px;
 }
 
+.wd-filter-dark {
+    background-color: #504A48;
+}
+
+.wd-banner-icon-shift {
+    bottom: 35%;
+    left: 40%;
+}
+
+.wd-banner-icon-shift-2 {
+    bottom: 35%;
+    left: 52%;
+}
+
+.wd-profile-icon-shift {
+    bottom: 30%;
+    left: 30%;
+}
+
+.wd-icon-shift {
+    bottom: 15%;
+    left: 28%;
+}
+
+
+.wd_round_80 {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+
 
 
 

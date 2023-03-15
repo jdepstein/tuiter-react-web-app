@@ -59,14 +59,31 @@ const EditProfileComponent = () => {
                     </Link>
                 </div>
             </div>
-            <img alt="" src={profile.bannerPicture} className="w-100"/>
+            <div className="wd-filter-dark position-relative">
+                <img alt="" src={profile.bannerPicture} className="opacity-50 w-100"/>
+                <div className="position-absolute wd-banner-icon-shift wd_round_80 bg-opacity-75 bg-dark">
+                    <i className="fa position-absolute fa-camera text-white wd-icon-shift h4"></i>
+                </div>
+                <div className="position-absolute wd-banner-icon-shift-2 wd_round_80 bg-opacity-75 bg-dark">
+                    <i className="fa position-absolute fa-arrow-left text-white wd-icon-shift h4"></i>
+                </div>
+
+                <div>
+                    <i></i>
+                </div>
+            </div>
             <div className="row position-relative mb-5">
                 <div className="col-8">
-                    <img alt="" src={profile.profilePicture} className="wd-image_146_round wd-pos-profile position-absolute border border-5 border-white m-0 p-0"/>
+                    <div className="wd-filter-dark position-absolute wd-pos-profile wd-image_146_round">
+                        <img alt="" src={profile.profilePicture} className="wd-filter-dark opacity-50 wd-image_146_round  border border-5 border-white m-0 p-0"/>
+                        <div className="position-absolute wd-profile-icon-shift wd_round_80 bg-opacity-75 bg-dark">
+                            <i className="fa position-absolute fa-camera text-white wd-icon-shift h4"></i>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-4">
                     <Link to="../edit-profile" className="wd-no-underline">
-                        <button className="float-end btn rounded-pill border bg-large bg-white fw-bold wd-text-15px mt-2 me-2"> Edit profile</button>
+                        <button className="float-end btn rounded-pill border bg-large bg-white fw-bold wd-text-15px mt-2 me-2 text-white border-0 disabled"> Edit profile</button>
                     </Link>
                 </div>
             </div>
@@ -122,6 +139,7 @@ const EditProfileComponent = () => {
                         </div>
                         <form className="form-floating mb-3">
                             <input type="date" className="form-control wd-text-13px text-dar wd-font-family-arial w-75"
+                                   value={profile.dateOfBirth}
                                    onChange={(e) => updateProfileBdayHandler(e.target.value)}>
                             </input>
                         </form>
