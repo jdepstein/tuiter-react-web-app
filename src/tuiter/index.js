@@ -1,4 +1,3 @@
-import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import ExploreComponent from "./explore";
 import {Routes, Route} from "react-router";
