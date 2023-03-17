@@ -43,7 +43,7 @@ const EditProfileComponent = () => {
             <div className="row mt-2 mb-1">
                 <div className="col-2">
                     <Link to="../profile" className="wd-no-underline">
-                        <i className="wd-text-20px p-2 rounded-pill text-dark ms-2 mt-2 wd-focus fa fa-arrow-left"></i>
+                        <i className="wd-text-20px p-2 rounded-pill text-dark ms-3 mt-1 wd-focus fa fa-x"></i>
                     </Link>
                 </div>
                 <div className="col-6">
@@ -62,10 +62,10 @@ const EditProfileComponent = () => {
             <div className="wd-filter-dark position-relative">
                 <img alt="" src={profile.bannerPicture} className="opacity-50 w-100"/>
                 <div className="position-absolute wd-banner-icon-shift wd_round_80 bg-opacity-75 bg-dark">
-                    <i className="fa position-absolute fa-camera text-white wd-icon-shift h4"></i>
+                    <i className="fa position-absolute fa-camera text-white wd-icon-shift-2 h4"></i>
                 </div>
                 <div className="position-absolute wd-banner-icon-shift-2 wd_round_80 bg-opacity-75 bg-dark">
-                    <i className="fa position-absolute fa-arrow-left text-white wd-icon-shift h4"></i>
+                    <i className="fa position-absolute fa-x text-white wd-icon-shift h4"></i>
                 </div>
 
                 <div>
@@ -77,7 +77,7 @@ const EditProfileComponent = () => {
                     <div className="wd-filter-dark position-absolute wd-pos-profile wd-image_146_round">
                         <img alt="" src={profile.profilePicture} className="wd-filter-dark opacity-50 wd-image_146_round  border border-5 border-white m-0 p-0"/>
                         <div className="position-absolute wd-profile-icon-shift wd_round_80 bg-opacity-75 bg-dark">
-                            <i className="fa position-absolute fa-camera text-white wd-icon-shift h4"></i>
+                            <i className="fa position-absolute fa-camera text-white wd-icon-shift-2 h4"></i>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const EditProfileComponent = () => {
 
             <div className="ps-4 pb-4 mb-4 mt-5">
                 <form className="form-floating mb-3">
-                    <input className="form-control wd-text-13px text-dar wd-font-family-arial w-75"
+                    <input className="form-control wd-text-13px text-dark wd-font-family-arial w-75"
                      value={profile.Name}
                      id="name"
                      onChange={(e) => updateProfileNameHandler(e.target.value)}>
@@ -99,7 +99,7 @@ const EditProfileComponent = () => {
                 </form>
 
                 <form className="form-floating mb-3">
-                    <textarea className="form-control wd-text-13px text-dar wd-font-family-arial w-75"
+                    <textarea className="form-control wd-text-13px text-dark wd-font-family-arial w-75"
                               value={profile.bio}
                               id="bio"
                               onChange={(e) => updateProfileBioHandler(e.target.value)}>
@@ -108,7 +108,7 @@ const EditProfileComponent = () => {
                 </form>
 
                 <form className="form-floating mb-3">
-                    <input className="form-control wd-text-13px text-dar wd-font-family-arial w-75"
+                    <input className="form-control wd-text-13px text-dark wd-font-family-arial w-75"
                               value={profile.location}
                               id="location"
                               onChange={(e) => updateProfileLocationHandler(e.target.value)}>
@@ -117,7 +117,7 @@ const EditProfileComponent = () => {
                 </form>
 
                 <form className="form-floating mb-3">
-                    <input className="form-control wd-text-13px text-dar wd-font-family-arial w-75"
+                    <input className="form-control wd-text-13px text-dark wd-font-family-arial w-75"
                            value={profile.website}
                            id="website"
                            onChange={(e) => updateProfileWebsiteHandler(e.target.value)}>
@@ -151,6 +151,10 @@ const EditProfileComponent = () => {
                         {profile.dateOfBirth}
                     </div>
                 }
+                <div className="text-dark wd-font-family-arial mt-3">
+                    Switch to Professional
+                    <i className="ps-2 fa fa-chevron-right"></i>
+                </div>
             </div>
 
         </>

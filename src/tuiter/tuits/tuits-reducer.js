@@ -1,14 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import tuits from './tuits.json';
 
-const currentUser = {
-    "profile_pic": "../../images/bob.jpg",
-    "name": "Josh",
-    "handle": "@ItsME",
-};
 
 const templateTuit = {
-    ...currentUser,
     "post_date" : "2 min",
     "post_image": null,
     "post_image_text": null,
@@ -33,8 +27,8 @@ const tuitsSlice = createSlice({
 
         createTuit(state, action) {
             state.unshift({
-                ...action.payload,
                 ...templateTuit,
+                ...action.payload,
                 _id: (new Date()).getTime(),
 
             })

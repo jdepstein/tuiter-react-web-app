@@ -1,6 +1,15 @@
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 
+
+const get_dob = (DOB) => {
+    const split = DOB.split("-")
+    const date = new Date()
+    date.setMonth(split[1] - 1);
+    const month = date.toLocaleString('en-US', { month: 'long' });
+    return month + " " +parseInt(split[2]) + " " + split[0]
+}
+
 const ProfileComponent = () => {
     const profileArray = useSelector(
         (state) => state.profile);
@@ -47,8 +56,10 @@ const ProfileComponent = () => {
                         <i className="wd-text-medium-gray bi bi-geo-alt me-1"></i>
                         {profile.location}
                         <i className="wd-text-medium-gray fa fa-birthday-cake ms-3 me-1"></i>
-                        {profile.dateOfBirth}
+                        <span>Born </span>
+                        {get_dob(profile.dateOfBirth)}
                         <i className="wd-text-medium-gray bi bi-calendar3 ms-3 me-1"> </i>
+                        <span>Joined </span>
                         {profile.dateJoined}
                     </div>
                     <div className="wd-text-15px text-secondary wd-font-family-arial mb-2">

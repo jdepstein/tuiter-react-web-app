@@ -27,7 +27,6 @@ const store = configureStore(
 function Tuiter() {
     return (
         <Provider store={store}>
-        <Nav/>
             <div className="row mt-2">
                 <div className="container-fluid col-2 col-sm-2 col-md-2 col-lg-1 col-xl-3">
                     <NavigationSidebar active="explore"/>

@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'fontawesome-free/css/all.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+
 
 
 
