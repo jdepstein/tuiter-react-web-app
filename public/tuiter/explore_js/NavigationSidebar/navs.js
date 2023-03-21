@@ -36,7 +36,7 @@ export default [
     },
 
     {   icon: 'fa fa-user',
-        link: "../profile.html",
+        link: "../profile_old.html",
         text: "Profile",
         active: false
     },

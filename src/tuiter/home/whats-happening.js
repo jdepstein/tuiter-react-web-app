@@ -35,12 +35,12 @@ const WhatsHappening = () => {
                         Tuit
                     </button>
                     <div className="wd-text-blue mt-2 pt-2">
-                        <i className="fa fa-image me-3 h4"></i>
-                        <i className="bi bi-filetype-gif me-3 h4"></i>
-                        <i className="bi bi-bar-chart me-3 h4"></i>
-                        <i className="bi bi-emoji-smile me-3 h4"></i>
-                        <i className="fa fa-calendar me-3 h4"></i>
-                        <i className="bi bi-geo-alt h4"></i>
+                        <i className="fa fw-normal fa-image me-3 h5"></i>
+                        <i className="bi bi-filetype-gif me-3 h5"></i>
+                        <i className="fa  fa-list me-3 h5"></i>
+                        <i className="fa fw-normal fa-face-smile me-3 h5"></i>
+                        <i className="fa fw-normal fa-calendar me-3 h5"></i>
+                        <i className="fa fa-location-dot h5"></i>
                     </div>
                 </div>
             </div>
