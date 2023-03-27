@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import {createTuit} from "../tuits/tuits-reducer";
+import {createTuitThunk}
+    from "../services/tuits-thunks";
 import {useDispatch, useSelector} from "react-redux";
 
 const WhatsHappening = () => {
@@ -15,7 +16,7 @@ const WhatsHappening = () => {
             name: profileArray[0].Name,
             handle: profileArray[0].handle,
         }
-        dispatch(createTuit(newTuit));
+        dispatch(createTuitThunk(newTuit));
         setWhatsHappening("");
     }
 

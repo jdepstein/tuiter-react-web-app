@@ -1,7 +1,12 @@
 import PostItemImage from "./post-item-image";
 import PostItemRegular from "./post-item-regular";
 import PostItemRetuit from "./post-item-retuit";
-import {useSelector} from "react-redux";
+
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+
+import {findTuitsThunk}
+    from "../services/tuits-thunks";
 
 
 function render_post_type(post) {
@@ -19,17 +24,27 @@ function render_post_type(post) {
 
 
 const TuitsList = () => {
-    const postsArray = useSelector(state => state.tuits)
+    const {tuits, loading} = useSelector(
+        state => state.tuitsData)
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(findTuitsThunk())
+    }, [])
     return(
-
-        postsArray.map(post  => {
-            return(
-                <div key={post._id} className="p-3 border-secondary border-bottom pb-4 pt-3">
-                    {render_post_type(post)}
-                </div>);
-        })
-
-
+        <>
+        {
+            loading &&
+        <li className="list-group-item">
+            Loading...
+        </li>
+        }
+            {
+                tuits.map(post  =>
+                    <div key={post._id} className="p-3 border-secondary border-bottom pb-4 pt-3">
+                        {render_post_type(post)}
+                    </div>)
+            }
+        </>
 
     );
 }

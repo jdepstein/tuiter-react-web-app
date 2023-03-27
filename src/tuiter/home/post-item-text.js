@@ -1,5 +1,5 @@
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 
 
 const PostItemText = (
@@ -24,8 +24,9 @@ const PostItemText = (
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
+
     return(
         <>
             <div className="row">

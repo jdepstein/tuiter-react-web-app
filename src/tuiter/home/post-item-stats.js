@@ -1,5 +1,5 @@
 import {useDispatch} from "react-redux";
-import {likeTuit, unlikeTuit} from "../tuits/tuits-reducer";
+import {updateTuitThunk} from "../services/tuits-thunks";
 
 const PostItemStats = (
     {
@@ -22,13 +22,6 @@ const PostItemStats = (
     }
 ) => {
     const dispatch = useDispatch()
-    const likeTuitHandler = (tuit) => {
-        dispatch(likeTuit(tuit))
-    }
-
-    const unlikeTuitHandler = (tuit) => {
-        dispatch(unlikeTuit(tuit))
-    }
     return(
 
         <div className="wd-margin-left-60px wd-font-family-arial mt-2">
@@ -44,12 +37,22 @@ const PostItemStats = (
 
                 {post.liked ?
                     <li className="wd-text-color-like list-group-post m-auto bg-transparent">
-                        <i onClick={() => unlikeTuitHandler(post)} className="wd-fill-like pe-1 fa fa-heart"></i>
+                        <i onClick={() =>
+                            dispatch(updateTuitThunk({
+                                ...post,
+                                liked: false,
+                                like: post.like - 1}))}
+                                className="wd-fill-like pe-1 fa fa-heart"></i>
                         {post.like}
                     </li>
                     :
                     <li className="wd-text-color-gray list-group-post m-auto bg-transparent">
-                        <i onClick={() => likeTuitHandler(post)} className="pe-1 fw-normal fa fa-heart"></i>
+                        <i onClick={() =>
+                            dispatch(updateTuitThunk({
+                                ...post,
+                                liked: true,
+                                like: post.like + 1}))}
+                           className="pe-1 fw-normal fa fa-heart"></i>
                         {post.like}
                     </li>
                 }
