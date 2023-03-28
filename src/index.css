@@ -432,6 +432,14 @@ li:hover {
     fill: #FA1A80;
 }
 
+.wd-fill-dislike {
+    fill: #1E9CF0;
+}
+
+.wd-color-dislike  {
+    color: #1E9CF0;
+}
+
 .wd-no_focus:focus{
     outline: none;
 }

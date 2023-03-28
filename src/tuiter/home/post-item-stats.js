@@ -14,6 +14,8 @@ const PostItemStats = (
             comment: "",
             liked: false,
             like: "",
+            disliked: "",
+            dislike: 0,
             retuit: "",
             type: "",
             retuit_info: ""
@@ -56,6 +58,29 @@ const PostItemStats = (
                         {post.like}
                     </li>
                 }
+
+                {post.disliked ?
+                    <li className="wd-color-dislike list-group-post m-auto bg-transparent">
+                        <i onClick={() =>
+                            dispatch(updateTuitThunk({
+                                ...post,
+                                disliked: false,
+                                dislike: post.dislike - 1}))}
+                           className="wd-fill-dislike pe-1 fa  fa-thumbs-down"></i>
+                        {post.dislike}
+                    </li>
+                    :
+                    <li className="wd-text-color-gray list-group-post m-auto bg-transparent">
+                        <i onClick={() =>
+                            dispatch(updateTuitThunk({
+                                ...post,
+                                disliked: true,
+                                dislike: post.dislike + 1}))}
+                           className="pe-1 fw-normal fa  fa-thumbs-down"></i>
+                        {post.dislike}
+                    </li>
+                }
+
 
                 <li className="wd-text-color-gray list-group-post m-auto bg-transparent">
                     <i className="fw-normal fa fa-share-square"></i>
