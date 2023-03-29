@@ -1,19 +1,32 @@
+import React, {useEffect} from "react";
+
+import {findProfileThunk}
+    from "../services/profile-thunks";
+
+import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {useSelector} from "react-redux";
 
 
 const get_dob = (DOB) => {
+    if (DOB === undefined) {
+        return "";
+    }
     const split = DOB.split("-")
     const date = new Date()
     date.setMonth(split[1] - 1);
     const month = date.toLocaleString('en-US', { month: 'long' });
-    return month + " " +parseInt(split[2]) + " " + split[0]
+    return month + " " + parseInt(split[2]) + " " + split[0]
 }
 
 const ProfileComponent = () => {
-    const profileArray = useSelector(
-        (state) => state.profile);
-    const profile = profileArray[0]
+
+    let {profile, loading} = useSelector(
+        state => state.profileData)
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(findProfileThunk())
+    }, [])
+
     return(
         <>
             <div className="row mt-2">
@@ -66,11 +79,10 @@ const ProfileComponent = () => {
                         <span className="text-dark fw-bold me-1">{profile.followingCount}</span>
                         Following
                         <span className="text-dark fw-bold me-1 ms-3">{profile.followersCount}</span>
-                        Follwers
+                        Followers
                     </div>
 
                 </div>
-
             
         </>
 

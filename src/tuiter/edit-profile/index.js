@@ -1,20 +1,25 @@
-import {Link} from "react-router-dom";
+import React, {useEffect, useState} from "react";
+
+import {findProfileThunk, updateProfileThunk}
+    from "../services/profile-thunks";
+
 import {useDispatch, useSelector} from "react-redux";
-import {useState} from "react";
-import {updateProfile} from "../reducers/profile-reducer";
+import {Link} from "react-router-dom";
+
 
 const EditProfileComponent = () => {
+    let {profile, loading} = useSelector(
+        state => state.profileData)
     const dispatch = useDispatch();
-    const profileArray = useSelector(
-        (state) => state.profile);
-    const [profile, setProfile] = useState(profileArray[0])
+    useEffect(() => {
+        dispatch(findProfileThunk())
+    }, [])
+    let [profile_, setProfile] = useState({})
+    console.log(profile)
+
     const [edit_b_day, setBday] = useState(false)
     const editBday = () => {
        setBday(!edit_b_day)
-    }
-
-    const updateProfileHandler = () => {
-        dispatch(updateProfile(profile))
     }
 
     const updateProfileLocationHandler = (target) => {
@@ -36,8 +41,6 @@ const EditProfileComponent = () => {
     const updateProfileBdayHandler = (target) => {
         setProfile({...profile, dateOfBirth: target})
     }
-
-
     return(
         <>
             <div className="row mt-2 mb-1">
@@ -53,8 +56,10 @@ const EditProfileComponent = () => {
                 </div>
                 <div className="col-4">
                     <Link to="../profile" className="wd-no-underline">
-                        <button onClick={() => updateProfileHandler()} className="mt-2 float-end btn rounded-pill border bg-large bg-dark text-white fw-bold wd-text-15px mt-2 me-3">
-                            Save
+                        <button onClick={() => dispatch(updateProfileThunk({
+                                ...profile}))}
+                                className="mt-2 float-end btn rounded-pill border bg-large bg-dark text-white fw-bold wd-text-15px mt-2 me-3">
+                                Save
                         </button>
                     </Link>
                 </div>
@@ -156,7 +161,6 @@ const EditProfileComponent = () => {
                     <i className="ps-2 fa fa-chevron-right"></i>
                 </div>
             </div>
-
         </>
 
     );

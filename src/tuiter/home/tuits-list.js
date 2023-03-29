@@ -30,6 +30,7 @@ const TuitsList = () => {
     useEffect(() => {
         dispatch(findTuitsThunk())
     }, [])
+
     return(
         <>
         {

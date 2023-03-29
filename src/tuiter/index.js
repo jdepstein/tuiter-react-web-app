@@ -5,12 +5,12 @@ import HomeComponent from "./home";
 import PostSummaryList from "./post-summary-list";
 
 import whoReducer from "./reducers/who-reducer";
-import tuitsSumReducer from "./tuits/tuits-sum-reducer";
+import summariesReducer from "./tuits/tuits-sum-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
 import profileReducer from "./reducers/profile-reducer";
 
 
-import { configureStore } from '@reduxjs/toolkit';
+import {configureStore} from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import ProfileComponent from "./profile";
 import FollowListComponent from "./who-to-follow-list";
@@ -19,7 +19,11 @@ import EditProfileComponent from "./edit-profile";
 
 
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits_sum: tuitsSumReducer, tuitsData: tuitsReducer, profile: profileReducer}});
+    {reducer:
+            {whoData: whoReducer,
+            summariesData: summariesReducer,
+            tuitsData: tuitsReducer,
+            profileData: profileReducer}});
 
 
 

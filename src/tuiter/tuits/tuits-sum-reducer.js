@@ -1,9 +1,35 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuits from './tuit_sum.json';
 
-const tuitsSumSlice = createSlice({
-    name: 'tuits',
-    initialState: tuits
+import {findSummariesThunk}
+    from "../services/summaries-thunk";
+
+const initialState = {
+    summaries: [],
+    loading: false
+}
+
+const summariesSlice = createSlice({
+    name: 'summaries',
+    initialState,
+    extraReducers: {
+        [findSummariesThunk.pending]:
+            (state) => {
+                state.loading = true
+                state.summaries = []
+            },
+        [findSummariesThunk.fulfilled]:
+            (state, { payload }) => {
+                state.loading = false
+                state.summaries = payload
+            },
+        [findSummariesThunk.rejected]:
+            (state, action) => {
+                state.loading = false
+                state.error = action.error
+            }
+    },
+    reducers: {}
 });
 
-export default tuitsSumSlice.reducer;
+
+export default summariesSlice.reducer;

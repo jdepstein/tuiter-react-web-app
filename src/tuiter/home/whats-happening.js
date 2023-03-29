@@ -1,20 +1,29 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {createTuitThunk}
     from "../services/tuits-thunks";
+
+import {findProfileThunk}
+    from "../services/profile-thunks";
+
 import {useDispatch, useSelector} from "react-redux";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
-    const dispatch = useDispatch();
 
-    const profileArray = useSelector(
-        (state) => state.profile);
+    let {profile, loading} = useSelector(
+        state => state.profileData)
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(findProfileThunk())
+    }, [])
+
+
     const tuitClickHandler = () => {
         const newTuit = {
             post_text: whatsHappening,
-            profile_pic: profileArray[0].profilePicture,
-            name: profileArray[0].Name,
-            handle: profileArray[0].handle,
+            profile_pic: profile.profilePicture,
+            name: profile.Name,
+            handle: profile.handle,
         }
         dispatch(createTuitThunk(newTuit));
         setWhatsHappening("");
@@ -23,7 +32,7 @@ const WhatsHappening = () => {
     return(
         <div className="row">
             <div className="col-auto">
-                <img alt="" src={profileArray[0].profilePicture} className="wd-image_round_48 pt-2 ps-2"/>
+                <img alt="" src={profile.profilePicture} className="wd-image_round_48 pt-2 ps-2"/>
             </div>
             <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"

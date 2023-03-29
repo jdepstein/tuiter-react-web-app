@@ -1,19 +1,43 @@
 import { createSlice } from "@reduxjs/toolkit";
-import whoArray from "../data/profile.json";
+import {updateProfileThunk, findProfileThunk}
+    from "../services/profile-thunks";
 
-const ProfileSlice = createSlice({
-    name: "profile",
-    initialState: whoArray,
+const initialState = {
+    profile: {},
+    loading: false
+}
+const profileSlice = createSlice({
+    name: 'tuits',
+    initialState,
+    extraReducers: {
+        [findProfileThunk.pending]:
+            (state) => {
+                state.loading = true
+                state.profile = []
+            },
+        [findProfileThunk.fulfilled]:
+            (state, { payload }) => {
+                state.loading = false
+                state.profile = payload
+            },
+        [findProfileThunk.rejected]:
+            (state, action) => {
+                state.loading = false
+                state.error = action.error
+            },
 
-    reducers: {
-        updateProfile(state, action) {
-            const profile_index = 0
-            state[profile_index] = action.payload
-
-        }
-    }
+        [updateProfileThunk.fulfilled]:
+            (state, { payload }) => {
+                state.loading = false
+                const profileNdx = state.profile
+                    .findIndex((t) => t.handle === payload.handle)
+                state.tuits[profileNdx] = {
+                    ...state.tuits[profileNdx],
+                    ...payload
+                }
+            }
+    },
+    reducers: {}
 });
 
-export const {updateProfile} = ProfileSlice.actions;
-
-export default ProfileSlice.reducer;
+export default profileSlice.reducer;
