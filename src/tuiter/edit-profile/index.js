@@ -52,7 +52,7 @@ const EditProfileComponent = () => {
                     </div>
                 </div>
                 <div className="col-4">
-                    <Link to="../profile" className="wd-no-underline">
+                    <Link to="../profile" onClick={window.location.reload}} className="wd-no-underline">
                         <button onClick={() => updateProfileHandler()} className="mt-2 float-end btn rounded-pill border bg-large bg-dark text-white fw-bold wd-text-15px mt-2 me-3">
                             Save
                         </button>
