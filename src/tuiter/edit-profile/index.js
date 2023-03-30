@@ -95,7 +95,7 @@ const EditProfileComponent = () => {
                     </div>
                     <div className="col-4">
                         <Link to="../edit-profile" className="wd-no-underline">
-                            <button className="float-end btn rounded-pill border bg-large bg-white fw-bold wd-text-15px mt-2 me-2 text-white border-0 disabled"> Edit profile</button>
+                            <button onClick={window.location.reload}  className="float-end btn rounded-pill border bg-large bg-white fw-bold wd-text-15px mt-2 me-2 text-white border-0 disabled"> Edit profile</button>
                         </Link>
                     </div>
                 </div>
