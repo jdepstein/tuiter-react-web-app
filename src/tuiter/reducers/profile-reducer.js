@@ -4,7 +4,7 @@ import {updateProfileThunk, findProfileThunk}
 
 const initialState = {
     profile: {},
-    loading: false
+    loading: true
 }
 const profileSlice = createSlice({
     name: 'tuits',
@@ -13,7 +13,7 @@ const profileSlice = createSlice({
         [findProfileThunk.pending]:
             (state) => {
                 state.loading = true
-                state.profile = []
+                state.profile = {}
             },
         [findProfileThunk.fulfilled]:
             (state, { payload }) => {
