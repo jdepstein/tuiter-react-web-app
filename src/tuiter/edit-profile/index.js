@@ -52,13 +52,13 @@ const EditProfileComponent = () => {
                     </div>
                 </div>
                 <div className="col-4">
-                    <Link to="../profile" onClick={window.location.reload}} className="wd-no-underline">
+                    <Link to="../profile" className="wd-no-underline">
                         <button onClick={() => updateProfileHandler()} className="mt-2 float-end btn rounded-pill border bg-large bg-dark text-white fw-bold wd-text-15px mt-2 me-3">
                             Save
                         </button>
                     </Link>
                 </div>
-            </div>
+            </div>zz
             <div className="wd-filter-dark position-relative">
                 <img alt="" src={profile.bannerPicture} className="opacity-50 w-100"/>
                 <div className="position-absolute wd-banner-icon-shift wd_round_80 bg-opacity-75 bg-dark">
